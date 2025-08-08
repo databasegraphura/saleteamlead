@@ -1,0 +1,63 @@
+/* src/components/Modal/Modal.module.css */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100; /* Ensure it's above other page content */
+  background-color: rgba(0, 0, 0, 0.75); /* Dark semi-transparent overlay */
+}
+
+.modal {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for true centering */
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  z-index: 101; /* Ensure it's above the backdrop */
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Maximum width for larger screens */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee; /* Separator line */
+  padding-bottom: 15px;
+}
+
+.modalHeader h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0; /* Remove default margin */
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s; /* Smooth color transition on hover */
+}
+
+.closeButton:hover {
+  color: #666;
+}
+
+.modalContent {
+  font-size: 16px;
+  color: #555;
+  max-height: 70vh; /* Max height to allow content to scroll if it's too long */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  padding-right: 10px; /* Add some padding for the scrollbar visually */
+}

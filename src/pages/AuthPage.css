@@ -1,0 +1,10 @@
+/* src/pages/AuthPage.css */
+.auth-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Light gray background, matching typical UI backdrop */
+  padding: 20px;
+  box-sizing: border-box;
+}

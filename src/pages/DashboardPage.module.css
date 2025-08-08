@@ -1,0 +1,129 @@
+/* src/pages/DashboardPage.module.css */
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.kpiCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between KPI cards */
+  margin-bottom: 40px;
+}
+
+.kpiCard1 {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow:  4px 0 4px rgb(0, 221, 255);
+  height: 80px;
+  padding: 25px;
+  min-width: 200px;
+  flex: 1; /* Allows cards to grow and shrink */
+  text-align: center;
+  color: rgb(0, 76, 255);
+}
+.kpiCard2 {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 4px 0 4px rgb(0, 128, 70);
+  height: 80px;
+  padding: 25px;
+  min-width: 200px;
+  flex: 1; /* Allows cards to grow and shrink */
+  text-align: center;
+  color: green;
+}
+.kpiCard3 {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 4px 0 4px rgb(0, 251, 255);
+  height: 80px;
+  padding: 25px;
+  min-width: 200px;
+  flex: 1; /* Allows cards to grow and shrink */
+  text-align: center;
+  color: rgb(0, 166, 255);
+}
+.kpiCard4 {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 4px 0 4px rgb(255, 221, 0);
+  height: 80px;
+  padding: 25px;
+  min-width: 200px;
+  flex: 1; /* Allows cards to grow and shrink */
+  text-align: center;
+  color: orange;
+}
+
+.kpiCard h3 {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 5px;
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+.kpiCard p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #777; /* A prominent color for the numbers */
+  margin-top: 4px;
+}
+
+/* Hot Clients Table */
+.hotClientsSection {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.hotClientsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.hotClientsTable th,
+.hotClientsTable td {
+  border: 1px solid #eee;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.hotClientsTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.hotClientsTable tbody tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+.hotClientsTable tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.errorContainer {
+  background-color: #ffe0e0;
+  border: 1px solid #ffb3b3;
+  color: #cc0000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
